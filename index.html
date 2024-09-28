@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Everton Ferreira</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>Logo</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
+
+        <button class="contato"><a href="#s-contact">Contato</a></button>
+      </div>
+    </header>
+
+    <section class="s-hero" id="inicio">
+      <div class="container">
+        <div class="caixa">
+         <div class="textos">
+    <h2 class="ola">Olá, Visitantes</h2>
+    <div class="apresentacao-container">
+        <h2 class="apresentacao">Meu nome é</h2>
+        <h1 class="pessoa">Everton Ferreira</h1>
+    </div>
+    <h2 class="desenvolvedor">Desenvolvedor C#</h2>
+</div>
+
+
+          <button>
+              <a href="./curriculo/Curriculo_EvertonFerreira.pdf" download="Everton-Ferreira-CV">Download CV</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="sobre">
+      <div class="container">
+        <div class="imagem">
+          <img class="foto" src="./images/foto.svg" alt="" />
+        </div>
+        <div class="infoTextos">
+          <h2>
+            Estudante de Ciência da Computação com conhecimentos em
+            <span class="stacks"> C#, ASP.NET, JavaScript, HTML e CSS. </span
+            >Estou em busca de um estágio para aplicar o que aprendi e
+            contribuir para projetos inovadores.
+          </h2>
+          <div class="redesSociais">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/everton-ferreiira"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/iseverton"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-contato" id="s-contact">
+      <div class="container">
+
+      <div class="caixaForm">
+
+
+       <!-- Api static forms  -->
+
+         <h2 class="Titulocontato">Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="1a3fe1f9-4317-4d03-956d-d47228575f75">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/enviado.html?">
+
+
+         </form>
+
+      </div>
+
+
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
